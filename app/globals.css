@@ -2,7 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 :root {
+  height: 100%;
+}
+
+.light {
+  color: #111;
+  background-color: #ffffff;
+}
+
+.dark {
+  color: #bbb;
+  background-color: #111;
+}
+
+.length {
+  position: relative;
+}
+
+.length:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  right: 0%;
+  border: 1px solid #15298b;
+  margin-top: 15px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,14 +59,4 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+} */
