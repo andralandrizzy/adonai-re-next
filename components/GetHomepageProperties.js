@@ -11,7 +11,7 @@ const GetHomepageProperties = ({ properties }) => {
     return (
         <Container>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-[20px] justify-center w-full">
-                {properties.slice(1, 10).map((content) => (
+                {properties.homes.slice(1, 10).map((content) => (
                     <div key={content.location.latitude} className="relative w-[100%] h-auto">
                         <Link href={'/'}>
 
