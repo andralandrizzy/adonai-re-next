@@ -3,7 +3,7 @@ import GetProperties from "./GetProperties"
 
 const PropertiesPageListing = async () => {
   const homeData = await fetchProperties();
-  const properties = homeData.data;
+  const properties = await homeData.data.homes;
   return (
     <>
       {<GetProperties properties={properties} />}

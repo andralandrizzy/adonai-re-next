@@ -4,7 +4,7 @@ import GetHomepageProperties from "./GetHomepageProperties";
 
 const HomePropertiesListing = async () => {
     const homeData = await fetchProperties();
-    const data = homeData.data
+    const data = await homeData.data.homes;
     // const properties = homeData.data.homes;
     // console.log(data);
 

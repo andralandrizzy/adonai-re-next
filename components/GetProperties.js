@@ -92,7 +92,7 @@ const GetProperties = ({ properties }) => {
         <section className="w-full h-auto">
             <Container>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-[20px] justify-center w-full">
-                    {properties.homes.map((content) => (
+                    {properties.map((content) => (
                         <div key={content.id} className="relative w-[100%] h-auto">
                             <Link href={'/'}>
                                 <div className="w-[100%] h-auto] rounded-md">
