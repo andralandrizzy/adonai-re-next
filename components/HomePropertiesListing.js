@@ -3,10 +3,10 @@ import GetHomepageProperties from "./GetHomepageProperties";
 
 
 const HomePropertiesListing = async () => {
-    const homeData = await fetchProperties();
-    const data = await homeData.data.homes;
+    const data = await fetchProperties();
+    // const data = await homeData.data.homes;
     // const properties = homeData.data.homes;
-    // console.log(data);
+    console.log(data);
 
     return (
         <>
