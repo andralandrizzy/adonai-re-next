@@ -6,7 +6,6 @@ const HomePropertiesListing = async () => {
     const data = await fetchProperties();
     // const data = await homeData.data.homes;
     // const properties = homeData.data.homes;
-    console.log(data);
 
     return (
         <>
