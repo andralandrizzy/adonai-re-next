@@ -10,7 +10,10 @@ const Hero = () => {
             url: '/img/beach_house-min.jpeg',
         },
         {
-            url: '/img/lake_view-min.jpeg',
+            url: '/img/flower_house_com.jpeg',
+        },
+        {
+            url: '/img/pool_com.jpeg',
         },
         {
             url: '/img/lightsnow-min.jpeg',
@@ -22,13 +25,13 @@ const Hero = () => {
             url: '/img/mansion_com.jpeg',
         }
     ];
-
     const [currentState, setCurrentState] = useState(0);
 
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            if (currentState === 4) {
+            if (currentState === slides.length - 1) {
+                
                 setCurrentState(0)
             } else {
                 setCurrentState(currentState + 1)

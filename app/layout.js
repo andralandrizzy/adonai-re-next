@@ -1,7 +1,8 @@
-import Navbar from '@/components/navbar/Navbar';
 import './globals.css'
 import { Poppins } from 'next/font/google'
+import { ClerkProvider } from '@clerk/nextjs';
 import Footer from '@/components/Footer';
+import Header from '@/components/navbar/Header';
 
 const font = Poppins({
   subsets: ['latin'],
@@ -17,12 +18,14 @@ export default function RootLayout({
   children,
 }) {
   return (
-    <html lang="en">
-      <body className={font.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={font.className}>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }

@@ -1,8 +1,12 @@
-import React from 'react'
+import PagesDetailsHero from "@/components/PagesDetailsHero"
+import BlogHeroBg from '@/public/img/blogpage_com.jpeg'
+
 
 const page = () => {
   return (
-    <div>Blog page</div>
+    <>
+      <PagesDetailsHero ImageBg={BlogHeroBg} text='Our Recent Blogs' href="/" prev="home" current="blogs" />
+    </>
   )
 }
 

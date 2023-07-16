@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "title": "Cozy Cottage in the Woods",
+        "price": 250000,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "sqft": 1200,
+        "address": {
+            "street": "123 Forest Lane",
+            "city": "Cityville",
+            "state": "AZ",
+            "postalCode": "12345",
+            "country": "United States"
+        },
+        "imageUrl": "/img/pool_com.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Modern Condo with Ocean View",
+        "price": 500000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "sqft": 1800,
+        "address": {
+            "street": "456 Ocean Avenue",
+            "city": "Beachtown",
+            "state": "FL",
+            "postalCode": "67890",
+            "country": "United States"
+        },
+        "imageUrl": "/img/flower_house_com.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Spacious Family Home",
+        "price": 400000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "sqft": 2500,
+        "address": {
+            "street": "789 Main Street",
+            "city": "Townsville",
+            "state": "FL",
+            "postalCode": "54321",
+            "country": "United States"
+        },
+        "imageUrl": "/img/beach_house-min.jpeg"
+    },
+    {
+        "id": 4,
+        "title": "Charming Victorian House",
+        "price": 800000,
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "sqft": 3200,
+        "address": {
+            "street": "987 Elm Street",
+            "city": "Villageville",
+            "state": "FL",
+            "postalCode": "13579",
+            "country": "United States"
+        },
+        "imageUrl": "/img/mansion_com.jpeg"
+    },
+    {
+        "id": 5,
+        "title": "Rustic Log Cabin Retreat",
+        "price": 350000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "sqft": 2000,
+        "address": {
+            "street": "456 Maple Drive",
+            "city": "Woodville",
+            "state": "FL",
+            "postalCode": "24680",
+            "country": "United States"
+        },
+        "imageUrl": "/img/city_com.jpeg"
+    },
+    {
+        "id": 6,
+        "title": "Luxurious Beachfront Villa",
+        "price": 1200000,
+        "bedrooms": 6,
+        "bathrooms": 5,
+        "sqft": 4500,
+        "address": {
+            "street": "123 Ocean View",
+            "city": "Beachville",
+            "state": "NY",
+            "postalCode": "97531",
+            "country": "United States"
+        },
+        "imageUrl": "/img/mbh.jpeg"
+    },
+    {
+        "id": 7,
+        "title": "Contemporary City Loft",
+        "price": 600000,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "sqft": 1500,
+        "address": {
+            "street": "789 Downtown Boulevard",
+            "city": "Metropolis",
+            "state": "MA",
+            "postalCode": "75309",
+            "country": "United States"
+        },
+        "imageUrl": "/img/listing_7.jpeg"
+    },
+    {
+        "id": 8,
+        "title": "Elegant Tudor Mansion",
+        "price": 2000000,
+        "bedrooms": 7,
+        "bathrooms": 6,
+        "sqft": 6500,
+        "address": {
+            "street": "555 Rose Lane",
+            "city": "Gardenville",
+            "state": "FL",
+            "postalCode": "36987",
+            "country": "United States"
+        },
+        "imageUrl": "/img/listing_8.jpeg"
+    },
+    {
+        "id": 9,
+        "title": "Quaint Countryside Farmhouse",
+        "price": 380000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "sqft": 2800,
+        "address": {
+            "street": "222 Country Road",
+            "city": "Farmville",
+            "state": "MA",
+            "postalCode": "86420",
+            "country": "United States"
+        },
+        "imageUrl": "/img/listing_9.jpeg"
+    },
+    {
+        "id": 10,
+        "title": "Mountain Chalet with Stunning Views",
+        "price": 750000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "sqft": 3100,
+        "address": {
+            "street": "777 Summit Drive",
+            "city": "Mountaintop",
+            "state": "MA",
+            "postalCode": "95173",
+            "country": "United States"
+        },
+        "imageUrl": "/img/listing_10.jpeg"
+    },
+    {
+        "id": 11,
+        "title": "Colonial Style Heritage Home",
+        "price": 900000,
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "sqft": 3800,
+        "address": {
+            "street": "987 Heritage Lane",
+            "city": "Historicville",
+            "state": "FL",
+            "postalCode": "24601",
+            "country": "United States"
+        },
+        "imageUrl": "/img/listing_11.jpeg"
+    },
+    {
+        "id": 12,
+        "title": "Mediterranean Villa with Pool",
+        "price": 1600000,
+        "bedrooms": 6,
+        "bathrooms": 4,
+        "sqft": 5000,
+        "address": {
+            "street": "456 Villa Road",
+            "city": "Seaside",
+            "state": "AZ",
+            "postalCode": "86421",
+            "country": "United States"
+        },
+        "imageUrl": "/img/listing_12.jpeg"
+    },
+    {
+        "id": 13,
+        "title": "Historic Victorian Bed and Breakfast",
+        "price": 1200000,
+        "bedrooms": 8,
+        "bathrooms": 9,
+        "sqft": 7000,
+        "address": {
+            "street": "123 Victorian Avenue",
+            "city": "Historicville",
+            "state": "FL",
+            "postalCode": "13579",
+            "country": "United States"
+        },
+        "imageUrl": "/img/lightsnow-min.jpeg"
+    },
+    {
+        "id": 14,
+        "title": "Lakefront Cabin Retreat",
+        "price": 420000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "sqft": 1800,
+        "address": {
+            "street": "789 Lakeview Drive",
+            "city": "Lakeside",
+            "state": "FL",
+            "postalCode": "86420",
+            "country": "United States"
+        },
+        "imageUrl": "/img/listing_14.jpeg"
+    },
+    {
+        "id": 15,
+        "title": "Stylish Urban Townhouse",
+        "price": 550000,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "sqft": 2100,
+        "address": {
+            "street": "987 City Street",
+            "city": "Metroville",
+            "state": "AZ",
+            "postalCode": "75310",
+            "country": "United States"
+        },
+        "imageUrl": "/img/listing_15.jpeg"
+    }
+]

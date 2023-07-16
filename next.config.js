@@ -2,12 +2,12 @@
 const nextConfig = {}
 
 module.exports = {
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'www.trulia.com',
-        },
-      ],
-    },
-  }
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+      },
+    ],
+  },
+}

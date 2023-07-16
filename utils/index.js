@@ -1,13 +1,6 @@
 export async function fetchProperties() {
-    const headers = {
-        "X-RapidAPI-Key": `${process.env.X_RAP_KEY}`,
-        "X-RapidAPI-Host": "trulia-real-estate-scraper.p.rapidapi.com",
-    }
+    const response = await fetch("http://localhost:3000/api/listings")
 
-    const response = await fetch('https://trulia-real-estate-scraper.p.rapidapi.com/homes/listing_by_url?url=https%3A%2F%2Fwww.trulia.com%2FFL%2Fmiami&page=1',
-        { headers: headers, });
-    const homes = await response.json()
-    const result = await homes.data.homes
-
-    return result
+    const listings = await response.json();
+    return listings;
 }

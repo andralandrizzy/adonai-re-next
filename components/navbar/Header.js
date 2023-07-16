@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import Logo from 'public/img/white_logo-min.jpeg'
 import Image from 'next/image'
-import Login from '../auth/Login';
 import Link from 'next/link';
 import { Dialog } from '@headlessui/react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Container from '../Container';
-import Dropdown from './Dropdown';
 import { useSelectedLayoutSegment } from 'next/navigation'
+import SignIn from '../auth/Sign-in';
+import { useAuth, UserButton } from '@clerk/nextjs';
 
 const navigation = [
     { id: '1', name: 'Home', href: '/', targetSegment: null },
@@ -21,8 +21,9 @@ const navigation = [
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const isUserLoggedin = false
+    const { userId } = useAuth()
     const activeSegment = useSelectedLayoutSegment()
+
 
     return (
         <header className="absolute inset-x-0 top-[1.5%] z-50">
@@ -65,16 +66,19 @@ const Header = () => {
                             </li>
                         ))}
                     </div>
-                    {isUserLoggedin ? (
+                    {!userId && (
                         <div className="relative hidden lg:flex lg:flex-1 lg:gap-[15px] lg:justify-end px-[1.5rem]">
-                            <Dropdown />
+                            <SignIn />
                         </div>
-                    ) : (
+                    )}
+                    {userId && (
+                        <div className="relative hidden lg:flex lg:flex-1 lg:gap-[15px] lg:justify-end lg:items-center px-[1.5rem]">
+                            <Link className="py-6" href='/profile'>
+                                Profile
+                            </Link>
+                            <UserButton afterSignOutUrl='/' />
+                        </div>
 
-                        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                            {/* <DarkModeToggle /> */}
-                            <Login />
-                        </div>
                     )}
                 </nav>
             </Container>
@@ -113,18 +117,18 @@ const Header = () => {
                                     </li>
                                 ))}
                             </div>
-                            {isUserLoggedin ? (
-                                <div className="py-6 relative">
-                                    <Dropdown />
-                                </div>
-                            ) : (
-
+                            {!userId && (
                                 <div className="py-6">
-                                    {/* <DarkModeToggle /> */}
-                                    <li className="list-none">
-                                        <Login />
-                                    </li>
+                                    <SignIn />
                                 </div>
+                            )}
+                            {userId && (
+                                <>
+                                    <Link href='/profile'>
+                                        Profile
+                                    </Link>
+                                    <UserButton afterSignOutUrl='/' />
+                                </>
                             )}
                         </div>
                     </div>
@@ -135,3 +139,17 @@ const Header = () => {
 }
 
 export default Header
+
+// {isUserLoggedin ? (
+//     <div className="py-6 relative">
+//         <Dropdown />
+//     </div>
+// ) : (
+
+//     <div className="py-6">
+//         {/* <DarkModeToggle /> */}
+//         <li className="list-none">
+//             <SignIn />
+//         </li>
+//     </div>
+// )}
